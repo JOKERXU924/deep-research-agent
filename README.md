@@ -43,3 +43,7 @@ uv run --locked research run-dag "SQLite 的 WAL 模式为何仍会出现写争�
 ```
 
 参考[架构与边界](docs/architecture.md)。提交缺陷时请使用合成问题和资料，避免附上密钥、私有原文和原始模型响应。
+
+## 许可证
+
+[MIT](LICENSE)
