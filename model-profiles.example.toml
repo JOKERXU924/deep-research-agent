@@ -1,0 +1,46 @@
+# Copy to a server-owned local file, then pass it explicitly with --profiles.
+# Credentials belong only in the process environment or the explicitly chosen .env.
+# Changing this file requires restarting the server; it never switches a running job.
+version = 1
+default_profile = "deepseek-main"
+
+[[profiles]]
+id = "deepseek-main"
+label = "DeepSeek 官方"
+provider = "deepseek"
+model = "deepseek-flash"
+base_url = "https://api.deepseek.com"
+api_key_env = "DEEPSEEK_API_KEY"
+timeout_seconds = 60.0
+[profiles.budget]
+max_calls = 9
+max_input_bytes = 589824
+max_output_tokens = 36864
+
+[[profiles]]
+id = "openai-main"
+label = "OpenAI 官方"
+provider = "openai"
+model = "gpt-4.1-mini"
+base_url = "https://api.openai.com/v1"
+api_key_env = "OPENAI_API_KEY"
+timeout_seconds = 60.0
+
+[[profiles]]
+id = "mimo-main"
+label = "MiMo 官方"
+provider = "mimo"
+model = "mimo-v2-flash"
+base_url = "https://api.xiaomimimo.com/v1"
+api_key_env = "MIMO_API_KEY"
+timeout_seconds = 60.0
+
+[[profiles]]
+id = "vllm-local"
+label = "本机 vLLM（先启动服务并确认模型名）"
+provider = "vllm"
+model = "Qwen/Qwen3-8B"
+base_url = "http://127.0.0.1:8000/v1"
+# If the local service requires a key, uncomment the reference below.
+# api_key_env = "VLLM_API_KEY"
+timeout_seconds = 60.0

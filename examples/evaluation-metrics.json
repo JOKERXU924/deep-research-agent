@@ -1,0 +1,1104 @@
+{
+  "schema_version": 1,
+  "data_status": "Sanitized metrics exported from archived runs. See docs/evaluation.md.",
+  "retrieval_v1": {
+    "summaries": {
+      "baseline": {
+        "cases": 20,
+        "recall": 0.475,
+        "all_targets_found": 6,
+        "mean_context_bytes": 2376.35
+      },
+      "coverage_lexical": {
+        "cases": 20,
+        "recall": 0.7,
+        "all_targets_found": 11,
+        "mean_context_bytes": 2229.15
+      },
+      "coverage_e5": {
+        "cases": 20,
+        "recall": 0.775,
+        "all_targets_found": 14,
+        "mean_context_bytes": 2349.7
+      }
+    },
+    "per_case": [
+      {
+        "id": "asyncio-3",
+        "byte_ceiling": 2966,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2966
+          },
+          "coverage_lexical": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2900
+          },
+          "coverage_e5": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2960
+          }
+        }
+      },
+      {
+        "id": "asyncio-4",
+        "byte_ceiling": 2430,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2430
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2402
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2406
+          }
+        }
+      },
+      {
+        "id": "asyncio-5",
+        "byte_ceiling": 1779,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1779
+          },
+          "coverage_lexical": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 653
+          },
+          "coverage_e5": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1756
+          }
+        }
+      },
+      {
+        "id": "asyncio-6",
+        "byte_ceiling": 2606,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2606
+          },
+          "coverage_lexical": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2579
+          },
+          "coverage_e5": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2512
+          }
+        }
+      },
+      {
+        "id": "sqlite-3",
+        "byte_ceiling": 2767,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2767
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2731
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2756
+          }
+        }
+      },
+      {
+        "id": "sqlite-4",
+        "byte_ceiling": 2748,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2748
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2677
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2748
+          }
+        }
+      },
+      {
+        "id": "sqlite-5",
+        "byte_ceiling": 1623,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1623
+          },
+          "coverage_lexical": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1414
+          },
+          "coverage_e5": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1578
+          }
+        }
+      },
+      {
+        "id": "sqlite-6",
+        "byte_ceiling": 1614,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1614
+          },
+          "coverage_lexical": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1441
+          },
+          "coverage_e5": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 1614
+          }
+        }
+      },
+      {
+        "id": "http-3",
+        "byte_ceiling": 2540,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2540
+          },
+          "coverage_lexical": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2466
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2485
+          }
+        }
+      },
+      {
+        "id": "http-4",
+        "byte_ceiling": 2504,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2504
+          },
+          "coverage_lexical": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2462
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2464
+          }
+        }
+      },
+      {
+        "id": "http-5",
+        "byte_ceiling": 1890,
+        "variants": {
+          "baseline": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 1890
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 1797
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 1886
+          }
+        }
+      },
+      {
+        "id": "http-6",
+        "byte_ceiling": 2671,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2671
+          },
+          "coverage_lexical": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2670
+          },
+          "coverage_e5": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2624
+          }
+        }
+      },
+      {
+        "id": "git-3",
+        "byte_ceiling": 2712,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2712
+          },
+          "coverage_lexical": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2706
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2707
+          }
+        }
+      },
+      {
+        "id": "git-4",
+        "byte_ceiling": 2536,
+        "variants": {
+          "baseline": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2536
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2486
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2487
+          }
+        }
+      },
+      {
+        "id": "git-5",
+        "byte_ceiling": 1998,
+        "variants": {
+          "baseline": {
+            "recall": 1.0,
+            "gold_count": 1,
+            "all_targets_found": true,
+            "context_bytes": 1998
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 1,
+            "all_targets_found": true,
+            "context_bytes": 1915
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 1,
+            "all_targets_found": true,
+            "context_bytes": 1988
+          }
+        }
+      },
+      {
+        "id": "git-6",
+        "byte_ceiling": 2153,
+        "variants": {
+          "baseline": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2153
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2145
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2128
+          }
+        }
+      },
+      {
+        "id": "numpy-3",
+        "byte_ceiling": 2521,
+        "variants": {
+          "baseline": {
+            "recall": 0.5,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2521
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2504
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2502
+          }
+        }
+      },
+      {
+        "id": "numpy-4",
+        "byte_ceiling": 2966,
+        "variants": {
+          "baseline": {
+            "recall": 1.0,
+            "gold_count": 3,
+            "all_targets_found": true,
+            "context_bytes": 2966
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 3,
+            "all_targets_found": true,
+            "context_bytes": 2942
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 3,
+            "all_targets_found": true,
+            "context_bytes": 2925
+          }
+        }
+      },
+      {
+        "id": "numpy-5",
+        "byte_ceiling": 2084,
+        "variants": {
+          "baseline": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2084
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 1407
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2082
+          }
+        }
+      },
+      {
+        "id": "numpy-6",
+        "byte_ceiling": 2419,
+        "variants": {
+          "baseline": {
+            "recall": 0.0,
+            "gold_count": 2,
+            "all_targets_found": false,
+            "context_bytes": 2419
+          },
+          "coverage_lexical": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2286
+          },
+          "coverage_e5": {
+            "recall": 1.0,
+            "gold_count": 2,
+            "all_targets_found": true,
+            "context_bytes": 2386
+          }
+        }
+      }
+    ]
+  },
+  "cross_language": {
+    "heldout": {
+      "historical": {
+        "questions": 60,
+        "sources": 12,
+        "gold_spans": 180,
+        "gold_union_coverage_pct": 84.44444444444444,
+        "all_annotated_spans_hit_pct": 58.333333333333336,
+        "mean_evidence_json_bytes": 3916.6666666666665
+      },
+      "current": {
+        "questions": 60,
+        "sources": 12,
+        "gold_spans": 180,
+        "gold_union_coverage_pct": 87.77777777777777,
+        "all_annotated_spans_hit_pct": 68.33333333333333,
+        "mean_evidence_json_bytes": 3872.616666666667
+      },
+      "paired_effect": {
+        "source_clusters": 12,
+        "repetitions": 5000,
+        "delta_percentage_points": 3.3333333333333335,
+        "percentile_95_ci": [
+          -0.5555555555555556,
+          8.333333333333334
+        ],
+        "limitation": "Source-cluster percentile bootstrap; few clusters and AI-curated labels limit inference"
+      }
+    },
+    "cross_language": {
+      "historical": {
+        "questions": 36,
+        "sources": 12,
+        "gold_spans": 108,
+        "gold_union_coverage_pct": 80.55555555555556,
+        "all_annotated_spans_hit_pct": 47.22222222222222,
+        "mean_evidence_json_bytes": 3918.1388888888887
+      },
+      "current": {
+        "questions": 36,
+        "sources": 12,
+        "gold_spans": 108,
+        "gold_union_coverage_pct": 85.18518518518519,
+        "all_annotated_spans_hit_pct": 63.888888888888886,
+        "mean_evidence_json_bytes": 3861.1111111111113
+      },
+      "paired_effect": {
+        "source_clusters": 12,
+        "repetitions": 5000,
+        "delta_percentage_points": 4.62962962962963,
+        "percentile_95_ci": [
+          -0.9259259259259259,
+          11.11111111111111
+        ],
+        "limitation": "Source-cluster percentile bootstrap; few clusters and AI-curated labels limit inference"
+      }
+    }
+  },
+  "evidence_budget": {
+    "historical": {
+      "questions": 30,
+      "sources": 6,
+      "gold_spans": 90,
+      "gold_union_coverage_pct": 88.88888888888889,
+      "all_annotated_spans_hit_pct": 70.0,
+      "mean_evidence_json_bytes": 3938.9333333333334
+    },
+    "current": {
+      "questions": 30,
+      "sources": 6,
+      "gold_spans": 90,
+      "gold_union_coverage_pct": 88.88888888888889,
+      "all_annotated_spans_hit_pct": 70.0,
+      "mean_evidence_json_bytes": 3867.8333333333335
+    },
+    "paired_effect": {
+      "source_clusters": 6,
+      "repetitions": 5000,
+      "delta_percentage_points": 0.0,
+      "percentile_95_ci": [
+        0.0,
+        0.0
+      ],
+      "limitation": "Source-cluster percentile bootstrap; few clusters and AI-curated labels limit inference"
+    }
+  },
+  "review": {
+    "scope": {
+      "valid_cases": 30,
+      "defective_cases": 30,
+      "valid_passed": 28,
+      "defective_blocked": 27,
+      "defective_passed": 2,
+      "errors": 1,
+      "mean_total_output_tokens_per_draft": 144.41666666666666,
+      "review_upper_cny": 0.307022
+    },
+    "excerpt": {
+      "valid_cases": 30,
+      "defective_cases": 30,
+      "valid_passed": 27,
+      "defective_blocked": 29,
+      "defective_passed": 0,
+      "errors": 1,
+      "mean_total_output_tokens_per_draft": 471.76666666666665,
+      "review_upper_cny": 0.49653
+    },
+    "reference": {
+      "valid_cases": 30,
+      "defective_cases": 30,
+      "valid_passed": 27,
+      "defective_blocked": 28,
+      "defective_passed": 1,
+      "errors": 1,
+      "mean_total_output_tokens_per_draft": 154.6,
+      "review_upper_cny": 0.29958
+    }
+  },
+  "harness_fault_injection": {
+    "recovery_fetches": {
+      "full_restart": 6,
+      "checkpoint_recovery": 2,
+      "reduction_pct": 66.66666666666667
+    },
+    "including_saved_prefix": {
+      "full_restart": 10,
+      "checkpoint_recovery": 6,
+      "reduction_pct": 40.0
+    },
+    "concurrent_same_query": {
+      "requests": 16,
+      "upstream": 1,
+      "reduction_pct": 93.75,
+      "stats": {
+        "hits": 1,
+        "misses": 1,
+        "joined": 15,
+        "upstream": 1,
+        "invalid": 0
+      }
+    },
+    "unknown_model_recovery": "blocked_without_resend"
+  },
+  "practical_study": {
+    "questions": [
+      {
+        "id": "T1",
+        "title": "异步接口的部分成功与超时设计",
+        "question": "我们要用Python 3.12实现一个并发访问多个下游的聚合接口，一个下游失败时其他成功结果仍有价值。应该怎样选择gather与TaskGroup，并收集部分成功结果？设置超时后是否能保证在该时间内结束？取消与清理应怎样处理，方案有哪些适用边界？ 请用中文给出不超过900字的技术决策简报，说明依据与不确定性。",
+        "criteria": [
+          {
+            "id": "P1",
+            "requirement": "gather遇普通异常默认传播首个异常，但不会因此自动取消其他子任务。"
+          },
+          {
+            "id": "P2",
+            "requirement": "return_exceptions=True把异常作为结果处理，需要逐项区分成功与失败。"
+          },
+          {
+            "id": "P3",
+            "requirement": "TaskGroup遇非取消异常会取消其余任务，不是天然的部分成功策略。"
+          },
+          {
+            "id": "P4",
+            "requirement": "wait_for超时会请求取消并等待取消完成，实际等待可能超过设定值。"
+          },
+          {
+            "id": "P5",
+            "requirement": "清理可放try/finally，捕获CancelledError后通常需要继续传播，不能随意吞掉。"
+          },
+          {
+            "id": "P6",
+            "requirement": "建议应匹配部分成功需求，并区分单个下游的异常、超时与父任务取消。"
+          }
+        ],
+        "generation": {
+          "chat": {
+            "error": null,
+            "seconds": 6.246666100108996,
+            "text_characters": 1318
+          },
+          "agent": {
+            "error": null,
+            "seconds": 13.014041599817574,
+            "text_characters": 1305
+          },
+          "same_evidence": {
+            "error": null,
+            "seconds": 5.071508700028062,
+            "text_characters": 1042
+          }
+        }
+      },
+      {
+        "id": "T2",
+        "title": "单机任务平台的SQLite并发决策",
+        "question": "我们为单机研究平台保存任务状态，多个进程可能同时读取和更新记录，希望先判断SQLite是否合适。它对并发读写有什么限制，WAL模式是否意味着多个写事务能同时执行？BEGIN IMMEDIATE与EXCLUSIVE应怎样理解？遇到读事务升级或COMMIT返回SQLITE_BUSY时，应该怎样判断事务状态并安排重试，不能作出哪些过度保证？ 请用中文给出不超过900字的技术决策简报，说明依据与不确定性。",
+        "criteria": [
+          {
+            "id": "P1",
+            "requirement": "多个连接可同时读，但同一时间只有一个写事务，不能声称WAL支持多个并行写事务。"
+          },
+          {
+            "id": "P2",
+            "requirement": "BEGIN IMMEDIATE立即尝试启动写事务，其他写事务存在时可能SQLITE_BUSY。"
+          },
+          {
+            "id": "P3",
+            "requirement": "EXCLUSIVE和IMMEDIATE在WAL模式下相同，其他日志模式下EXCLUSIVE还限制其他连接读取。"
+          },
+          {
+            "id": "P4",
+            "requirement": "读事务升级写事务可能因其他连接正在修改而返回SQLITE_BUSY。"
+          },
+          {
+            "id": "P5",
+            "requirement": "COMMIT因其他读者返回SQLITE_BUSY时事务仍active，可以稍后重试COMMIT。"
+          },
+          {
+            "id": "P6",
+            "requirement": "不应把所有错误都视为整事务自动回滚，应检查状态并避免盲目重放业务写入。"
+          }
+        ],
+        "generation": {
+          "chat": {
+            "error": null,
+            "seconds": 5.080198899842799,
+            "text_characters": 1035
+          },
+          "agent": {
+            "error": null,
+            "seconds": 18.52267950004898,
+            "text_characters": 997
+          },
+          "same_evidence": {
+            "error": null,
+            "seconds": 6.164760800078511,
+            "text_characters": 1465
+          }
+        }
+      },
+      {
+        "id": "T3",
+        "title": "个性化HTTP接口的缓存取舍",
+        "question": "我们有返回用户个性化数据的HTTP接口，既想减少回源，又不能让共享缓存把一个用户的数据交给别人。响应的no-cache、no-store与private分别约束什么，能否互相替代？浏览器和共享缓存的策略应怎样区分，max-age与s-maxage怎么取舍？请给出可执行建议，并说明缓存指令对隐私保护有哪些不能保证的边界。 请用中文给出不超过900字的技术决策简报，说明依据与不确定性。",
+        "criteria": [
+          {
+            "id": "P1",
+            "requirement": "响应no-cache并不等于禁止存储，而是复用前需要按规则验证。"
+          },
+          {
+            "id": "P2",
+            "requirement": "no-store要求缓存不存储相关请求/响应，但不是可靠的隐私或安全保证。"
+          },
+          {
+            "id": "P3",
+            "requirement": "未限定字段的private阻止共享缓存存储，不意味着浏览器私有缓存也必须禁止存储。"
+          },
+          {
+            "id": "P4",
+            "requirement": "private只控制缓存存储位置，不保证消息内容本身的隐私。"
+          },
+          {
+            "id": "P5",
+            "requirement": "s-maxage面向共享缓存并覆盖max-age或Expires对共享缓存的新鲜度约束。"
+          },
+          {
+            "id": "P6",
+            "requirement": "建议区分私有和共享缓存及用户隔离；不能仅靠缓存指令代替鉴权和隐私保护。"
+          }
+        ],
+        "generation": {
+          "chat": {
+            "error": null,
+            "seconds": 6.731270600110292,
+            "text_characters": 1611
+          },
+          "agent": {
+            "error": "no_evidence",
+            "seconds": 2.9008870001416653,
+            "text_characters": 0
+          },
+          "same_evidence": {
+            "error": "ValueError",
+            "seconds": 1.2800097465515137e-05,
+            "text_characters": 0
+          }
+        }
+      },
+      {
+        "id": "T4",
+        "title": "外部JSON配置的严格导入",
+        "question": "平台允许合作方上传JSON配置，我们需要拒绝重复键、非标准数值及过大的输入，并在解析后做业务校验。Python 3.12默认json.loads对重复键和NaN、Infinity会怎样处理？应使用哪些解析钩子改变这些行为，strict=True是否等于完整业务校验？输入大小限制应放在哪里，并说明方案仍有哪些边界。 请用中文给出不超过900字的技术决策简报，说明依据与不确定性。",
+        "criteria": [
+          {
+            "id": "P1",
+            "requirement": "默认重复对象名称被接受，通常保留最后一个名称值对，而不是自动拒绝重复键。"
+          },
+          {
+            "id": "P2",
+            "requirement": "默认会接受Infinity、-Infinity、NaN等非标准JSON数值。"
+          },
+          {
+            "id": "P3",
+            "requirement": "object_pairs_hook能拿到名称值对序列，可据此检测并拒绝重复键。"
+          },
+          {
+            "id": "P4",
+            "requirement": "parse_constant用于改变反序列化时非标准数值处理，不能把序列化allow_nan当加载开关。"
+          },
+          {
+            "id": "P5",
+            "requirement": "应在解析前限制待解析数据大小，恶意输入可能消耗大量CPU和内存。"
+          },
+          {
+            "id": "P6",
+            "requirement": "strict=True不是完整JSON规范及业务Schema校验，解析成功后仍需要业务字段验证。"
+          }
+        ],
+        "generation": {
+          "chat": {
+            "error": null,
+            "seconds": 6.244291600072756,
+            "text_characters": 1506
+          },
+          "agent": {
+            "error": null,
+            "seconds": 18.81930570001714,
+            "text_characters": 1273
+          },
+          "same_evidence": {
+            "error": null,
+            "seconds": 4.949132699985057,
+            "text_characters": 1368
+          }
+        }
+      },
+      {
+        "id": "T5",
+        "title": "图片批处理的视图与副本取舍",
+        "question": "一个NumPy图片批处理程序需要裁剪、重排和展平数组；局部修改不能意外污染原图，但内存也有限。基本索引与高级索引的视图或副本行为有什么区别？reshape、ravel和flatten能否保证不复制？如何决定何时显式copy，base属性又能判断什么、不能判断什么？请给出具体取舍建议。 请用中文给出不超过900字的技术决策简报，说明依据与不确定性。",
+        "criteria": [
+          {
+            "id": "P1",
+            "requirement": "基本索引通常产生视图，共享数据缓冲，修改可能影响原数组。"
+          },
+          {
+            "id": "P2",
+            "requirement": "高级索引通常创建副本，不能把所有切片索引视为同一种行为。"
+          },
+          {
+            "id": "P3",
+            "requirement": "reshape可在可能时返回视图，非连续等情况下可能需要复制，不能保证零复制。"
+          },
+          {
+            "id": "P4",
+            "requirement": "ravel尽可能返回连续展平视图，flatten始终返回展平副本。"
+          },
+          {
+            "id": "P5",
+            "requirement": "base可辅助判断与其他数组的视图关系，但不能据此判断数组对象是不是新创建。"
+          },
+          {
+            "id": "P6",
+            "requirement": "需要写入隔离时应明确copy并承担内存开销，不能同时无条件保证隔离和零复制。"
+          }
+        ],
+        "generation": {
+          "chat": {
+            "error": null,
+            "seconds": 6.414682900067419,
+            "text_characters": 1363
+          },
+          "agent": {
+            "error": null,
+            "seconds": 17.956378299975768,
+            "text_characters": 1664
+          },
+          "same_evidence": {
+            "error": null,
+            "seconds": 5.926997100003064,
+            "text_characters": 1321
+          }
+        }
+      }
+    ],
+    "variants": {
+      "chat": {
+        "planned": 5,
+        "completed": 5,
+        "quality_tasks": 4,
+        "judge_correct_pct": 87.5,
+        "judge_partial_pct": 10.416666666666668,
+        "judge_wrong_pct": 2.0833333333333335,
+        "judge_missing_pct": 0.0,
+        "judge_actionability": 4,
+        "judge_uncertainty_handling": 3.5
+      },
+      "agent": {
+        "planned": 5,
+        "completed": 4,
+        "quality_tasks": 4,
+        "judge_correct_pct": 66.66666666666667,
+        "judge_partial_pct": 25.0,
+        "judge_wrong_pct": 2.0833333333333335,
+        "judge_missing_pct": 6.25,
+        "judge_actionability": 2.0,
+        "judge_uncertainty_handling": 2.25
+      },
+      "same_evidence": {
+        "planned": 5,
+        "completed": 4,
+        "quality_tasks": 4,
+        "judge_correct_pct": 85.41666666666666,
+        "judge_partial_pct": 14.583333333333334,
+        "judge_wrong_pct": 0.0,
+        "judge_missing_pct": 0.0,
+        "judge_actionability": 3.875,
+        "judge_uncertainty_handling": 3.25
+      }
+    },
+    "paired_generation_time": {
+      "tasks": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "chat_mean_seconds": 5.9964598750229925,
+      "agent_mean_seconds": 17.078101274964865,
+      "agent_over_chat": 2.848030609877029,
+      "agent_minus_chat_seconds": 11.081641399941873,
+      "agent_time_saving_pct": -184.8030609877029,
+      "rows": [
+        {
+          "case_id": "T1",
+          "chat_seconds": 6.246666100108996,
+          "agent_seconds": 13.014041599817574
+        },
+        {
+          "case_id": "T2",
+          "chat_seconds": 5.080198899842799,
+          "agent_seconds": 18.52267950004898
+        },
+        {
+          "case_id": "T4",
+          "chat_seconds": 6.244291600072756,
+          "agent_seconds": 18.81930570001714
+        },
+        {
+          "case_id": "T5",
+          "chat_seconds": 6.414682900067419,
+          "agent_seconds": 17.956378299975768
+        }
+      ]
+    },
+    "per_task_judge_metrics": [
+      {
+        "case_id": "T1",
+        "variant": "chat",
+        "judge_repeats": 2,
+        "correct_pct": 91.66666666666666,
+        "partial_pct": 8.333333333333334,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 3.5
+      },
+      {
+        "case_id": "T2",
+        "variant": "chat",
+        "judge_repeats": 2,
+        "correct_pct": 66.66666666666667,
+        "partial_pct": 25.0,
+        "wrong_pct": 8.333333333333334,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 3.5
+      },
+      {
+        "case_id": "T4",
+        "variant": "chat",
+        "judge_repeats": 2,
+        "correct_pct": 100.0,
+        "partial_pct": 0.0,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 4
+      },
+      {
+        "case_id": "T5",
+        "variant": "chat",
+        "judge_repeats": 2,
+        "correct_pct": 91.66666666666666,
+        "partial_pct": 8.333333333333334,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 3
+      },
+      {
+        "case_id": "T1",
+        "variant": "agent",
+        "judge_repeats": 2,
+        "correct_pct": 58.333333333333336,
+        "partial_pct": 33.333333333333336,
+        "wrong_pct": 0.0,
+        "missing_pct": 8.333333333333334,
+        "actionability": 2.5,
+        "uncertainty_handling": 3
+      },
+      {
+        "case_id": "T2",
+        "variant": "agent",
+        "judge_repeats": 2,
+        "correct_pct": 50.0,
+        "partial_pct": 33.333333333333336,
+        "wrong_pct": 0.0,
+        "missing_pct": 16.666666666666668,
+        "actionability": 1,
+        "uncertainty_handling": 2
+      },
+      {
+        "case_id": "T4",
+        "variant": "agent",
+        "judge_repeats": 2,
+        "correct_pct": 66.66666666666667,
+        "partial_pct": 25.0,
+        "wrong_pct": 8.333333333333334,
+        "missing_pct": 0.0,
+        "actionability": 1.5,
+        "uncertainty_handling": 1.5
+      },
+      {
+        "case_id": "T5",
+        "variant": "agent",
+        "judge_repeats": 2,
+        "correct_pct": 91.66666666666666,
+        "partial_pct": 8.333333333333334,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 3,
+        "uncertainty_handling": 2.5
+      },
+      {
+        "case_id": "T1",
+        "variant": "same_evidence",
+        "judge_repeats": 2,
+        "correct_pct": 83.33333333333333,
+        "partial_pct": 16.666666666666668,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 3.5,
+        "uncertainty_handling": 3.5
+      },
+      {
+        "case_id": "T2",
+        "variant": "same_evidence",
+        "judge_repeats": 2,
+        "correct_pct": 83.33333333333334,
+        "partial_pct": 16.666666666666668,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 3.5
+      },
+      {
+        "case_id": "T4",
+        "variant": "same_evidence",
+        "judge_repeats": 2,
+        "correct_pct": 83.33333333333333,
+        "partial_pct": 16.666666666666668,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 3
+      },
+      {
+        "case_id": "T5",
+        "variant": "same_evidence",
+        "judge_repeats": 2,
+        "correct_pct": 91.66666666666666,
+        "partial_pct": 8.333333333333334,
+        "wrong_pct": 0.0,
+        "missing_pct": 0.0,
+        "actionability": 4,
+        "uncertainty_handling": 3
+      }
+    ],
+    "judge_disagreement": {
+      "disagreement_cells": 12,
+      "rated_task_variant_criterion_cells": 72
+    },
+    "human_verification_time": null
+  }
+}

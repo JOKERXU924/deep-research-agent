@@ -1,0 +1,1690 @@
+{
+  "version": 1,
+  "id": "researchbench-educational-v1",
+  "description": "35 self-authored fictional two-document bridge questions over 11 domain labels. A small controlled regression/teaching corpus; not a diverse real-world benchmark, not human calibrated, and not a claim of broad research quality.",
+  "provenance": "Created for this project's M8 educational evaluation. Every entity assignment and rule is invented. Documents use the reserved benchmark.invalid domain and must never be downloaded. Gold was authored with the fixtures, has not been independently annotated, and must not enter generation prompts. Shared templates make cases correlated; domain labels do not create independent domain coverage.",
+  "cases": [
+    {
+      "id": "rb-001",
+      "domain": "software",
+      "question": "In this fictional scenario, what release channel applies to Atlas deployment? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Atlas deployment assignment",
+          "text": "Fictional benchmark record. Atlas deployment is assigned to the Orion build policy.\nThis record identifies the applicable policy but does not state its release channel.",
+          "url": "https://benchmark.invalid/rb-001/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Orion build policy specification",
+          "text": "Fictional benchmark rule. The Orion build policy specifies release channel: canary.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-001/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "canary"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Atlas deployment is assigned to the Orion build policy.",
+            "aliases": [
+              "Orion build policy"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Orion build policy specifies release channel: canary.",
+            "aliases": [
+              "canary"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-002",
+      "domain": "software",
+      "question": "In this fictional scenario, what retention period applies to Birch backup? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Birch backup assignment",
+          "text": "Fictional benchmark record. Birch backup is assigned to the Cedar retention policy.\nThis record identifies the applicable policy but does not state its retention period.",
+          "url": "https://benchmark.invalid/rb-002/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Cedar retention policy specification",
+          "text": "Fictional benchmark rule. The Cedar retention policy specifies retention period: 14 days.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-002/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "14 days"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Birch backup is assigned to the Cedar retention policy.",
+            "aliases": [
+              "Cedar retention policy"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Cedar retention policy specifies retention period: 14 days.",
+            "aliases": [
+              "14 days"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-003",
+      "domain": "software",
+      "question": "In this fictional scenario, what response target applies to Nova service? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Nova service assignment",
+          "text": "Fictional benchmark record. Nova service is assigned to the Lumen incident tier.\nThis record identifies the applicable policy but does not state its response target.",
+          "url": "https://benchmark.invalid/rb-003/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Lumen incident tier specification",
+          "text": "Fictional benchmark rule. The Lumen incident tier specifies response target: 20 minutes.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-003/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "20 minutes"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Nova service is assigned to the Lumen incident tier.",
+            "aliases": [
+              "Lumen incident tier"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Lumen incident tier specifies response target: 20 minutes.",
+            "aliases": [
+              "20 minutes"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-004",
+      "domain": "software",
+      "question": "In this fictional scenario, what required notice applies to Echo package? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Echo package assignment",
+          "text": "Fictional benchmark record. Echo package is assigned to the Prism distribution license.\nThis record identifies the applicable policy but does not state its required notice.",
+          "url": "https://benchmark.invalid/rb-004/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Prism distribution license specification",
+          "text": "Fictional benchmark rule. The Prism distribution license specifies required notice: NOTICE-A.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-004/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "NOTICE-A"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Echo package is assigned to the Prism distribution license.",
+            "aliases": [
+              "Prism distribution license"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Prism distribution license specifies required notice: NOTICE-A.",
+            "aliases": [
+              "NOTICE-A"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-005",
+      "domain": "energy",
+      "question": "In this fictional scenario, what inspection interval applies to Harbor battery? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Harbor battery assignment",
+          "text": "Fictional benchmark record. Harbor battery is assigned to the Cobalt inspection plan.\nThis record identifies the applicable policy but does not state its inspection interval.",
+          "url": "https://benchmark.invalid/rb-005/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Cobalt inspection plan specification",
+          "text": "Fictional benchmark rule. The Cobalt inspection plan specifies inspection interval: 6 weeks.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-005/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "6 weeks"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Harbor battery is assigned to the Cobalt inspection plan.",
+            "aliases": [
+              "Cobalt inspection plan"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Cobalt inspection plan specifies inspection interval: 6 weeks.",
+            "aliases": [
+              "6 weeks"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-006",
+      "domain": "energy",
+      "question": "In this fictional scenario, what shutdown threshold applies to Mesa turbine? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Mesa turbine assignment",
+          "text": "Fictional benchmark record. Mesa turbine is assigned to the Amber shutdown rule.\nThis record identifies the applicable policy but does not state its shutdown threshold.",
+          "url": "https://benchmark.invalid/rb-006/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Amber shutdown rule specification",
+          "text": "Fictional benchmark rule. The Amber shutdown rule specifies shutdown threshold: 72 units.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-006/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "72 units"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Mesa turbine is assigned to the Amber shutdown rule.",
+            "aliases": [
+              "Amber shutdown rule"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Amber shutdown rule specifies shutdown threshold: 72 units.",
+            "aliases": [
+              "72 units"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-007",
+      "domain": "energy",
+      "question": "In this fictional scenario, what maintenance window applies to Ridge inverter? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Ridge inverter assignment",
+          "text": "Fictional benchmark record. Ridge inverter is assigned to the Quartz maintenance group.\nThis record identifies the applicable policy but does not state its maintenance window.",
+          "url": "https://benchmark.invalid/rb-007/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Quartz maintenance group specification",
+          "text": "Fictional benchmark rule. The Quartz maintenance group specifies maintenance window: Tuesday morning.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-007/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Tuesday morning"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Ridge inverter is assigned to the Quartz maintenance group.",
+            "aliases": [
+              "Quartz maintenance group"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Quartz maintenance group specifies maintenance window: Tuesday morning.",
+            "aliases": [
+              "Tuesday morning"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-008",
+      "domain": "energy",
+      "question": "In this fictional scenario, what reserve capacity applies to Solar field? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Solar field assignment",
+          "text": "Fictional benchmark record. Solar field is assigned to the Violet storage class.\nThis record identifies the applicable policy but does not state its reserve capacity.",
+          "url": "https://benchmark.invalid/rb-008/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Violet storage class specification",
+          "text": "Fictional benchmark rule. The Violet storage class specifies reserve capacity: 18 units.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-008/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "18 units"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Solar field is assigned to the Violet storage class.",
+            "aliases": [
+              "Violet storage class"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Violet storage class specifies reserve capacity: 18 units.",
+            "aliases": [
+              "18 units"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-009",
+      "domain": "education",
+      "question": "In this fictional scenario, what project weight applies to Willow course? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Willow course assignment",
+          "text": "Fictional benchmark record. Willow course is assigned to the Delta assessment scheme.\nThis record identifies the applicable policy but does not state its project weight.",
+          "url": "https://benchmark.invalid/rb-009/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Delta assessment scheme specification",
+          "text": "Fictional benchmark rule. The Delta assessment scheme specifies project weight: 40 percent.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-009/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "40 percent"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Willow course is assigned to the Delta assessment scheme.",
+            "aliases": [
+              "Delta assessment scheme"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Delta assessment scheme specifies project weight: 40 percent.",
+            "aliases": [
+              "40 percent"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-010",
+      "domain": "education",
+      "question": "In this fictional scenario, what minimum credits applies to Maple scholarship? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Maple scholarship assignment",
+          "text": "Fictional benchmark record. Maple scholarship is assigned to the Juniper eligibility band.\nThis record identifies the applicable policy but does not state its minimum credits.",
+          "url": "https://benchmark.invalid/rb-010/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Juniper eligibility band specification",
+          "text": "Fictional benchmark rule. The Juniper eligibility band specifies minimum credits: 24 credits.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-010/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "24 credits"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Maple scholarship is assigned to the Juniper eligibility band.",
+            "aliases": [
+              "Juniper eligibility band"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Juniper eligibility band specifies minimum credits: 24 credits.",
+            "aliases": [
+              "24 credits"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-011",
+      "domain": "education",
+      "question": "In this fictional scenario, what required module applies to Elm laboratory? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Elm laboratory assignment",
+          "text": "Fictional benchmark record. Elm laboratory is assigned to the Iris training route.\nThis record identifies the applicable policy but does not state its required module.",
+          "url": "https://benchmark.invalid/rb-011/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Iris training route specification",
+          "text": "Fictional benchmark rule. The Iris training route specifies required module: Safety-B.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-011/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Safety-B"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Elm laboratory is assigned to the Iris training route.",
+            "aliases": [
+              "Iris training route"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Iris training route specifies required module: Safety-B.",
+            "aliases": [
+              "Safety-B"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-012",
+      "domain": "transport",
+      "question": "In this fictional scenario, what departure time applies to River tram? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "River tram assignment",
+          "text": "Fictional benchmark record. River tram is assigned to the Silver timetable.\nThis record identifies the applicable policy but does not state its departure time.",
+          "url": "https://benchmark.invalid/rb-012/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Silver timetable specification",
+          "text": "Fictional benchmark rule. The Silver timetable specifies departure time: 08:15.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-012/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "08:15"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "River tram is assigned to the Silver timetable.",
+            "aliases": [
+              "Silver timetable"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Silver timetable specifies departure time: 08:15.",
+            "aliases": [
+              "08:15"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-013",
+      "domain": "transport",
+      "question": "In this fictional scenario, what ticket price applies to Grove bus? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Grove bus assignment",
+          "text": "Fictional benchmark record. Grove bus is assigned to the Coral fare zone.\nThis record identifies the applicable policy but does not state its ticket price.",
+          "url": "https://benchmark.invalid/rb-013/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Coral fare zone specification",
+          "text": "Fictional benchmark rule. The Coral fare zone specifies ticket price: 7 tokens.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-013/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "7 tokens"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Grove bus is assigned to the Coral fare zone.",
+            "aliases": [
+              "Coral fare zone"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Coral fare zone specifies ticket price: 7 tokens.",
+            "aliases": [
+              "7 tokens"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-014",
+      "domain": "transport",
+      "question": "In this fictional scenario, what boarding gate applies to Bay ferry? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Bay ferry assignment",
+          "text": "Fictional benchmark record. Bay ferry is assigned to the Pearl boarding plan.\nThis record identifies the applicable policy but does not state its boarding gate.",
+          "url": "https://benchmark.invalid/rb-014/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Pearl boarding plan specification",
+          "text": "Fictional benchmark rule. The Pearl boarding plan specifies boarding gate: Gate-C.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-014/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Gate-C"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Bay ferry is assigned to the Pearl boarding plan.",
+            "aliases": [
+              "Pearl boarding plan"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Pearl boarding plan specifies boarding gate: Gate-C.",
+            "aliases": [
+              "Gate-C"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-015",
+      "domain": "water",
+      "question": "In this fictional scenario, what sampling frequency applies to Canal station? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Canal station assignment",
+          "text": "Fictional benchmark record. Canal station is assigned to the Azure sampling plan.\nThis record identifies the applicable policy but does not state its sampling frequency.",
+          "url": "https://benchmark.invalid/rb-015/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Azure sampling plan specification",
+          "text": "Fictional benchmark rule. The Azure sampling plan specifies sampling frequency: twice daily.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-015/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "twice daily"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Canal station is assigned to the Azure sampling plan.",
+            "aliases": [
+              "Azure sampling plan"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Azure sampling plan specifies sampling frequency: twice daily.",
+            "aliases": [
+              "twice daily"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-016",
+      "domain": "water",
+      "question": "In this fictional scenario, what replacement interval applies to Pond filter? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Pond filter assignment",
+          "text": "Fictional benchmark record. Pond filter is assigned to the Indigo service class.\nThis record identifies the applicable policy but does not state its replacement interval.",
+          "url": "https://benchmark.invalid/rb-016/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Indigo service class specification",
+          "text": "Fictional benchmark rule. The Indigo service class specifies replacement interval: 9 months.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-016/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "9 months"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Pond filter is assigned to the Indigo service class.",
+            "aliases": [
+              "Indigo service class"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Indigo service class specifies replacement interval: 9 months.",
+            "aliases": [
+              "9 months"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-017",
+      "domain": "water",
+      "question": "In this fictional scenario, what reserve volume applies to Brook tank? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Brook tank assignment",
+          "text": "Fictional benchmark record. Brook tank is assigned to the Teal reserve rule.\nThis record identifies the applicable policy but does not state its reserve volume.",
+          "url": "https://benchmark.invalid/rb-017/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Teal reserve rule specification",
+          "text": "Fictional benchmark rule. The Teal reserve rule specifies reserve volume: 300 units.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-017/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "300 units"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Brook tank is assigned to the Teal reserve rule.",
+            "aliases": [
+              "Teal reserve rule"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Teal reserve rule specifies reserve volume: 300 units.",
+            "aliases": [
+              "300 units"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-018",
+      "domain": "materials",
+      "question": "In this fictional scenario, what storage cabinet applies to Aster alloy? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Aster alloy assignment",
+          "text": "Fictional benchmark record. Aster alloy is assigned to the Bronze handling class.\nThis record identifies the applicable policy but does not state its storage cabinet.",
+          "url": "https://benchmark.invalid/rb-018/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Bronze handling class specification",
+          "text": "Fictional benchmark rule. The Bronze handling class specifies storage cabinet: Cabinet-D.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-018/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Cabinet-D"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Aster alloy is assigned to the Bronze handling class.",
+            "aliases": [
+              "Bronze handling class"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Bronze handling class specifies storage cabinet: Cabinet-D.",
+            "aliases": [
+              "Cabinet-D"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-019",
+      "domain": "materials",
+      "question": "In this fictional scenario, what curing duration applies to Dune resin? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Dune resin assignment",
+          "text": "Fictional benchmark record. Dune resin is assigned to the Opal curing recipe.\nThis record identifies the applicable policy but does not state its curing duration.",
+          "url": "https://benchmark.invalid/rb-019/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Opal curing recipe specification",
+          "text": "Fictional benchmark rule. The Opal curing recipe specifies curing duration: 45 minutes.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-019/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "45 minutes"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Dune resin is assigned to the Opal curing recipe.",
+            "aliases": [
+              "Opal curing recipe"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Opal curing recipe specifies curing duration: 45 minutes.",
+            "aliases": [
+              "45 minutes"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-020",
+      "domain": "materials",
+      "question": "In this fictional scenario, what sample count applies to Flint fiber? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Flint fiber assignment",
+          "text": "Fictional benchmark record. Flint fiber is assigned to the Jade inspection standard.\nThis record identifies the applicable policy but does not state its sample count.",
+          "url": "https://benchmark.invalid/rb-020/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Jade inspection standard specification",
+          "text": "Fictional benchmark rule. The Jade inspection standard specifies sample count: 12 samples.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-020/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "12 samples"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Flint fiber is assigned to the Jade inspection standard.",
+            "aliases": [
+              "Jade inspection standard"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Jade inspection standard specifies sample count: 12 samples.",
+            "aliases": [
+              "12 samples"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-021",
+      "domain": "agriculture",
+      "question": "In this fictional scenario, what watering day applies to Dawn orchard? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Dawn orchard assignment",
+          "text": "Fictional benchmark record. Dawn orchard is assigned to the Pine irrigation plan.\nThis record identifies the applicable policy but does not state its watering day.",
+          "url": "https://benchmark.invalid/rb-021/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Pine irrigation plan specification",
+          "text": "Fictional benchmark rule. The Pine irrigation plan specifies watering day: Thursday.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-021/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Thursday"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Dawn orchard is assigned to the Pine irrigation plan.",
+            "aliases": [
+              "Pine irrigation plan"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Pine irrigation plan specifies watering day: Thursday.",
+            "aliases": [
+              "Thursday"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-022",
+      "domain": "agriculture",
+      "question": "In this fictional scenario, what storage room applies to Clover seed? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Clover seed assignment",
+          "text": "Fictional benchmark record. Clover seed is assigned to the Fern storage category.\nThis record identifies the applicable policy but does not state its storage room.",
+          "url": "https://benchmark.invalid/rb-022/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Fern storage category specification",
+          "text": "Fictional benchmark rule. The Fern storage category specifies storage room: Room-F.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-022/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Room-F"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Clover seed is assigned to the Fern storage category.",
+            "aliases": [
+              "Fern storage category"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Fern storage category specifies storage room: Room-F.",
+            "aliases": [
+              "Room-F"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-023",
+      "domain": "agriculture",
+      "question": "In this fictional scenario, what next crop applies to Meadow field? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Meadow field assignment",
+          "text": "Fictional benchmark record. Meadow field is assigned to the Acorn rotation cycle.\nThis record identifies the applicable policy but does not state its next crop.",
+          "url": "https://benchmark.invalid/rb-023/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Acorn rotation cycle specification",
+          "text": "Fictional benchmark rule. The Acorn rotation cycle specifies next crop: barley.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-023/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "barley"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Meadow field is assigned to the Acorn rotation cycle.",
+            "aliases": [
+              "Acorn rotation cycle"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Acorn rotation cycle specifies next crop: barley.",
+            "aliases": [
+              "barley"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-024",
+      "domain": "logistics",
+      "question": "In this fictional scenario, what delivery window applies to Parcel-X? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Parcel-X assignment",
+          "text": "Fictional benchmark record. Parcel-X is assigned to the Falcon delivery lane.\nThis record identifies the applicable policy but does not state its delivery window.",
+          "url": "https://benchmark.invalid/rb-024/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Falcon delivery lane specification",
+          "text": "Fictional benchmark rule. The Falcon delivery lane specifies delivery window: two working days.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-024/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "two working days"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Parcel-X is assigned to the Falcon delivery lane.",
+            "aliases": [
+              "Falcon delivery lane"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Falcon delivery lane specifies delivery window: two working days.",
+            "aliases": [
+              "two working days"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-025",
+      "domain": "logistics",
+      "question": "In this fictional scenario, what required liner applies to Crate-Y? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Crate-Y assignment",
+          "text": "Fictional benchmark record. Crate-Y is assigned to the Heron packing class.\nThis record identifies the applicable policy but does not state its required liner.",
+          "url": "https://benchmark.invalid/rb-025/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Heron packing class specification",
+          "text": "Fictional benchmark rule. The Heron packing class specifies required liner: Liner-H.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-025/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Liner-H"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Crate-Y is assigned to the Heron packing class.",
+            "aliases": [
+              "Heron packing class"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Heron packing class specifies required liner: Liner-H.",
+            "aliases": [
+              "Liner-H"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-026",
+      "domain": "logistics",
+      "question": "In this fictional scenario, what audit month applies to North depot? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "North depot assignment",
+          "text": "Fictional benchmark record. North depot is assigned to the Kestrel audit group.\nThis record identifies the applicable policy but does not state its audit month.",
+          "url": "https://benchmark.invalid/rb-026/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Kestrel audit group specification",
+          "text": "Fictional benchmark rule. The Kestrel audit group specifies audit month: November.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-026/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "November"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "North depot is assigned to the Kestrel audit group.",
+            "aliases": [
+              "Kestrel audit group"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Kestrel audit group specifies audit month: November.",
+            "aliases": [
+              "November"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-027",
+      "domain": "library",
+      "question": "In this fictional scenario, what loan duration applies to Book-R? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Book-R assignment",
+          "text": "Fictional benchmark record. Book-R is assigned to the Lantern loan category.\nThis record identifies the applicable policy but does not state its loan duration.",
+          "url": "https://benchmark.invalid/rb-027/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Lantern loan category specification",
+          "text": "Fictional benchmark rule. The Lantern loan category specifies loan duration: 21 days.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-027/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "21 days"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Book-R is assigned to the Lantern loan category.",
+            "aliases": [
+              "Lantern loan category"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Lantern loan category specifies loan duration: 21 days.",
+            "aliases": [
+              "21 days"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-028",
+      "domain": "library",
+      "question": "In this fictional scenario, what required credential applies to Archive-S? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Archive-S assignment",
+          "text": "Fictional benchmark record. Archive-S is assigned to the Beacon access tier.\nThis record identifies the applicable policy but does not state its required credential.",
+          "url": "https://benchmark.invalid/rb-028/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Beacon access tier specification",
+          "text": "Fictional benchmark rule. The Beacon access tier specifies required credential: Badge-J.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-028/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Badge-J"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Archive-S is assigned to the Beacon access tier.",
+            "aliases": [
+              "Beacon access tier"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Beacon access tier specifies required credential: Badge-J.",
+            "aliases": [
+              "Badge-J"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-029",
+      "domain": "library",
+      "question": "In this fictional scenario, what shelf location applies to Journal-T? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Journal-T assignment",
+          "text": "Fictional benchmark record. Journal-T is assigned to the Compass shelving map.\nThis record identifies the applicable policy but does not state its shelf location.",
+          "url": "https://benchmark.invalid/rb-029/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Compass shelving map specification",
+          "text": "Fictional benchmark rule. The Compass shelving map specifies shelf location: Shelf-K.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-029/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Shelf-K"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Journal-T is assigned to the Compass shelving map.",
+            "aliases": [
+              "Compass shelving map"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Compass shelving map specifies shelf location: Shelf-K.",
+            "aliases": [
+              "Shelf-K"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-030",
+      "domain": "manufacturing",
+      "question": "In this fictional scenario, what calibration interval applies to Press-U? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Press-U assignment",
+          "text": "Fictional benchmark record. Press-U is assigned to the Comet calibration plan.\nThis record identifies the applicable policy but does not state its calibration interval.",
+          "url": "https://benchmark.invalid/rb-030/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Comet calibration plan specification",
+          "text": "Fictional benchmark rule. The Comet calibration plan specifies calibration interval: 10 shifts.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-030/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "10 shifts"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Press-U is assigned to the Comet calibration plan.",
+            "aliases": [
+              "Comet calibration plan"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Comet calibration plan specifies calibration interval: 10 shifts.",
+            "aliases": [
+              "10 shifts"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-031",
+      "domain": "manufacturing",
+      "question": "In this fictional scenario, what inspection sample size applies to Batch-V? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Batch-V assignment",
+          "text": "Fictional benchmark record. Batch-V is assigned to the Meteor quality band.\nThis record identifies the applicable policy but does not state its inspection sample size.",
+          "url": "https://benchmark.invalid/rb-031/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Meteor quality band specification",
+          "text": "Fictional benchmark rule. The Meteor quality band specifies inspection sample size: 8 items.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-031/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "8 items"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Batch-V is assigned to the Meteor quality band.",
+            "aliases": [
+              "Meteor quality band"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Meteor quality band specifies inspection sample size: 8 items.",
+            "aliases": [
+              "8 items"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-032",
+      "domain": "manufacturing",
+      "question": "In this fictional scenario, what assembly station applies to Robot-W? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "Robot-W assignment",
+          "text": "Fictional benchmark record. Robot-W is assigned to the Orbit work assignment.\nThis record identifies the applicable policy but does not state its assembly station.",
+          "url": "https://benchmark.invalid/rb-032/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Orbit work assignment specification",
+          "text": "Fictional benchmark rule. The Orbit work assignment specifies assembly station: Station-L.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-032/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Station-L"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "Robot-W is assigned to the Orbit work assignment.",
+            "aliases": [
+              "Orbit work assignment"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Orbit work assignment specifies assembly station: Station-L.",
+            "aliases": [
+              "Station-L"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-033",
+      "domain": "environment",
+      "question": "In this fictional scenario, what survey season applies to West wetland? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "West wetland assignment",
+          "text": "Fictional benchmark record. West wetland is assigned to the Moss survey schedule.\nThis record identifies the applicable policy but does not state its survey season.",
+          "url": "https://benchmark.invalid/rb-033/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Moss survey schedule specification",
+          "text": "Fictional benchmark rule. The Moss survey schedule specifies survey season: autumn.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-033/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "autumn"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "West wetland is assigned to the Moss survey schedule.",
+            "aliases": [
+              "Moss survey schedule"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Moss survey schedule specifies survey season: autumn.",
+            "aliases": [
+              "autumn"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-034",
+      "domain": "environment",
+      "question": "In this fictional scenario, what sensor count applies to East forest? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "East forest assignment",
+          "text": "Fictional benchmark record. East forest is assigned to the Reed monitoring class.\nThis record identifies the applicable policy but does not state its sensor count.",
+          "url": "https://benchmark.invalid/rb-034/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Reed monitoring class specification",
+          "text": "Fictional benchmark rule. The Reed monitoring class specifies sensor count: 16 sensors.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-034/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "16 sensors"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "East forest is assigned to the Reed monitoring class.",
+            "aliases": [
+              "Reed monitoring class"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Reed monitoring class specifies sensor count: 16 sensors.",
+            "aliases": [
+              "16 sensors"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    },
+    {
+      "id": "rb-035",
+      "domain": "environment",
+      "question": "In this fictional scenario, what cleanup day applies to South coast? Explain the connection between the two documents.",
+      "kind": "research",
+      "documents": [
+        {
+          "id": "assignment",
+          "title": "South coast assignment",
+          "text": "Fictional benchmark record. South coast is assigned to the Sage cleanup rota.\nThis record identifies the applicable policy but does not state its cleanup day.",
+          "url": "https://benchmark.invalid/rb-035/assignment"
+        },
+        {
+          "id": "rule",
+          "title": "Sage cleanup rota specification",
+          "text": "Fictional benchmark rule. The Sage cleanup rota specifies cleanup day: Saturday.\nThe rule applies to every item assigned to this named policy.",
+          "url": "https://benchmark.invalid/rb-035/rule"
+        }
+      ],
+      "gold": {
+        "answer_aliases": [
+          "Saturday"
+        ],
+        "facts": [
+          {
+            "id": "bridge",
+            "statement": "South coast is assigned to the Sage cleanup rota.",
+            "aliases": [
+              "Sage cleanup rota"
+            ],
+            "source_ids": [
+              "assignment"
+            ]
+          },
+          {
+            "id": "property",
+            "statement": "The Sage cleanup rota specifies cleanup day: Saturday.",
+            "aliases": [
+              "Saturday"
+            ],
+            "source_ids": [
+              "rule"
+            ]
+          }
+        ],
+        "supporting_facts": []
+      }
+    }
+  ],
+  "source_sha256": null,
+  "split": "self-authored-regression"
+}

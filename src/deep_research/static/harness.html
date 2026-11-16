@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>研究运行轨迹</title><link rel="stylesheet" href="/styles.css">
+<script src="/harness.js" defer></script></head>
+<body><main class="main">
+<header class="page-header"><div><p class="eyebrow">RESEARCH / EXECUTION</p>
+<h1>研究运行轨迹</h1><p>查看中断、恢复与证据修订的实际记录。</p></div><a href="/">返回研究工作台</a></header>
+<section class="panel"><label for="runs">选择运行记录</label><select id="runs"></select>
+<button id="refresh" class="button secondary">刷新</button>
+<p id="notice" role="status">正在读取记录……</p>
+<p class="help">任务通过 harness-start 创建、harness-resume 恢复。本页只读，不会调用模型。</p></section>
+<section class="panel"><h2>执行概况</h2><p id="summary"></p><p id="reuse"></p><p id="cache"></p></section>
+<section class="panel"><h2>逐步执行记录</h2><ol id="timeline" class="events"></ol></section>
+<section class="panel"><h2>研究要点与修复状态</h2><div id="points"></div><div id="gaps"></div>
+<p class="help">任务执行完成不代表研究质量合格；支持复核结果仍需结合原文判断。</p></section>
+</main></body></html>

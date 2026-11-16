@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Deep Research 本地研究工作台：提交任务、查看进度、审阅证据报告。">
+  <title>Deep Research · 本地研究工作台</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到研究工作台</a>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="研究任务导航">
+      <a class="brand" href="/" aria-label="Deep Research 首页"><span class="brand-mark" aria-hidden="true">dr.</span><span>Deep Research<small>LOCAL RESEARCH WORKSPACE</small></span></a>
+      <div class="sidebar-heading"><h2>任务记录</h2><button id="refresh-jobs" type="button" class="text-button" aria-label="刷新任务记录">刷新</button></div>
+      <p class="history-note">保留执行过程，也保留未解决的问题。<a href="/harness">查看可恢复任务轨迹</a></p>
+      <div id="jobs-status" class="muted" role="status">正在读取任务……</div>
+      <ol id="jobs" class="job-list" aria-label="已保存的研究任务"></ol>
+      <div class="sidebar-footer"><span class="connection-dot" aria-hidden="true"></span><div>只在本机使用<small>离线演示不调用真实模型</small></div><span class="version">M7</span></div>
+    </aside>
+    <main id="main" class="main">
+      <header class="page-header"><div><p class="eyebrow">RESEARCH, WITH A TRACE</p><h1>研究流程，清晰可追溯。</h1><p class="subtitle">从问题到证据，再到经过审查的报告。</p></div><span class="local-badge">本地工作台</span></header>
+      <div id="global-error" class="notice error hidden" role="alert"></div>
+      <section class="composer panel" aria-labelledby="composer-heading">
+        <div class="section-heading"><div><p class="eyebrow">01 / NEW RESEARCH</p><h2 id="composer-heading">开始一次研究</h2></div><span id="mode-badge" class="tag">离线演示</span></div>
+        <form id="research-form">
+          <div class="form-row"><div class="field"><label for="mode">运行模式</label><select id="mode" name="mode" disabled><option value="demo">离线演示 · 不消耗模型额度</option><option value="live" disabled>真实研究 · 服务尚未开启</option></select></div><div id="scenario-field" class="field"><label for="scenario">教学场景</label><select id="scenario" name="scenario" disabled><option value="repair">修复后通过 · Red → Blue → Red</option><option value="passed">首次审查通过</option><option value="oscillation">版本来回变化时停止</option><option value="stalled">补丁无变化时停止</option><option value="max-rounds">修复达到轮数上限</option><option value="format">格式错误后有界恢复</option><option value="deadline">全局超时后降级</option><option value="slow">慢速演示 · 用于测试取消</option></select></div></div>
+          <div id="model-profile-field" class="field hidden"><label for="model-profile">模型配置 <span class="label-note">仅影响新任务</span></label><select id="model-profile" name="profile_id" disabled aria-describedby="model-profile-help"></select><p id="model-profile-help" class="help"></p></div>
+          <div class="field"><label for="question">研究问题 <span id="question-label-note" class="label-note">固定教学样例</span></label><textarea id="question" name="question" rows="3" maxlength="1000" readonly required aria-describedby="question-help" placeholder="正在加载教学问题……"></textarea><p id="question-help" class="help">演示使用固定问题、资料与假模型，展示真实执行流程，不会根据任意问题进行检索。</p></div>
+          <div class="options-row"><label class="check"><input id="review" type="checkbox" checked disabled><span>Red–Blue 审查<small>检查报告并进行有界修复</small></span></label><label class="check"><input id="compression" type="checkbox" disabled><span>上下文压缩<small id="compression-help">仅筛选已有证据，不补充新资料</small></span></label></div>
+          <label class="check"><input id="robust-contracts" type="checkbox" disabled><span>研究稳定性优化（实验）<small>逐要点生成、定向补查、局部修复；可能增加调用，未通过审查会保留为草稿</small></span></label>
+          <div class="options-row"><label class="check"><input id="rerank-evidence" type="checkbox" disabled><span>证据精排（实验）<small>增加一次模型调用，按具体要点重排候选原文</small></span></label><label class="check"><input id="check-support" type="checkbox" disabled><span>结论支持判定（实验）<small>增加一次调用；正文仅展示模型判为充分支持的结论</small></span></label></div>
+          <label class="check"><input id="optimize-research" type="checkbox" disabled><span>按要点研究与修订（实验）<small>区分事实与弃答、改写查询、补查一次、局部修订一次；仍受总预算限制</small></span></label>
+          <div id="live-options" class="live-options hidden"><div class="field"><label for="memory-scope">历史记忆范围 <span class="label-note">可选</span></label><input id="memory-scope" type="text" maxlength="64" autocomplete="off" placeholder="例如 biology；留空不使用历史记忆"><p class="help">只在指定范围内复用合格证据；历史资料不自动等于当前事实。</p></div><label class="check consent"><input id="confirm-live" type="checkbox"><span>我确认本次会调用真实模型，可能计费，并将问题、检索词及选定证据发送给已配置的外部服务。</span></label></div>
+          <div class="form-footer"><p id="service-info" class="help">正在连接本地服务……</p><button id="submit-job" class="button primary" type="submit" disabled>开始离线演示 <span aria-hidden="true">↗</span></button></div><p id="submit-status" class="help" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section id="task-panel" class="task-panel panel" aria-labelledby="task-heading">
+        <div class="section-heading"><div><p class="eyebrow">02 / EXECUTION</p><h2 id="task-heading">任务执行</h2></div><span id="task-status" class="status-badge neutral">尚未选择</span></div>
+        <div id="task-empty" class="empty-state"><span class="empty-icon" aria-hidden="true">◎</span><h3>从一个可验证的流程开始</h3><p>创建一次演示，或从左侧选择已有任务。<br>这里会显示已保存的进度，而不是估算的百分比。</p></div>
+        <div id="task-content" class="hidden"><div class="task-meta"><div><p id="task-question" class="task-question"></p><p id="task-id" class="mono muted"></p><p id="task-time" class="help"></p></div><button id="cancel-job" class="button secondary" type="button" disabled>停止任务</button></div><div id="task-notice" class="notice hidden" role="status"></div><div class="events-heading"><h3>执行记录</h3><span id="stream-status" class="help" role="status">等待连接</span></div><ol id="events" class="events" aria-label="任务执行进度"></ol><p id="events-empty" class="help">尚无执行记录。</p></div>
+      </section>
+      <section id="model-audit-panel" class="panel hidden" aria-labelledby="model-audit-heading"><p class="eyebrow">MODEL / BUDGET</p><h2 id="model-audit-heading">模型与调用预算</h2><p id="model-audit-profile" class="task-question"></p><p id="model-audit-budget" class="help"></p><p id="model-audit-usage" class="help"></p><p class="help">输入按包含 Schema 的应用请求 JSON 字节计；输出是请求额度预留。不是精确费用上限，未知用量不能当作零。</p><div id="model-audit-failures" aria-live="polite"></div></section>
+      <section id="report-panel" class="report-panel panel hidden" aria-labelledby="report-heading">
+        <div class="section-heading report-heading"><div><p class="eyebrow">03 / RESEARCH OUTPUT</p><h2 id="report-heading">研究报告</h2></div><div class="downloads"><a id="download-markdown" class="text-button" download>下载 Markdown</a><a id="download-json" class="text-button" download>下载 JSON</a></div></div>
+        <div id="report-notice" class="notice"></div>
+        <section id="research-map" class="review-details" aria-label="研究要点、结论、证据与缺口"></section>
+        <section id="review-details" class="review-details" aria-label="当前报告的审查问题"></section>
+        <section id="gap-retrieval-details" class="review-details" aria-label="检索筛选与缺口补查记录"></section>
+        <article id="report" class="report"></article>
+      </section>
+      <footer class="main-footer">执行完成 ≠ 研究质量合格。请结合原文证据判断；模型审查不能替代独立事实核查。</footer>
+    </main>
+  </div>
+</body>
+</html>
